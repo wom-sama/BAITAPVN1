@@ -45,6 +45,10 @@ namespace ConsoleApp2
                     case "5":
                         QLHS.SapXepTheoTuoi(students);
                         break;
+                    case "6":
+                        Console.WriteLine("Danh sach hoc sinh la: ");
+                        students.ForEach(i => QLHS.In1HS(i));
+                        break;
                     case "7":
                         QLHS.Them20SV(students);
                         Console.WriteLine("Danh sach hoc sinh sau khi them 20 sinh vien la: ");

@@ -15,6 +15,7 @@ namespace ConsoleApp2
             Console.WriteLine("3. In ong so tuoi cua tat ca hoc sinh trong danh sach");
             Console.WriteLine("4. In hoc sinh co tuoi lon nhat");
             Console.WriteLine("5. Sap xep danh sach hoc sinh theo tuoi tang dan");
+            Console.WriteLine("6. In danh sach hoc sinh");
             Console.WriteLine("7. them 20 sinh vien ngau nhien vao danh sach");
             Console.WriteLine("0. Thoat");
         }
