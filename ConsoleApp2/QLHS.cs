@@ -21,14 +21,23 @@ namespace ConsoleApp2
         }
         public static Student Nhap1HS()
         {
-            Student student = new Student();
-            Console.Write("Nhap Id: ");
-            student.Id = int.Parse(Console.ReadLine());
-            Console.Write("Nhap Ten: ");
-            student.Name = Console.ReadLine();
-            Console.Write("Nhap Tuoi: ");
-            student.Age = int.Parse(Console.ReadLine());
-            return student;
+            try
+            {
+                Student student = new Student();
+                Console.Write("Nhap Id: ");
+                student.Id = int.Parse(Console.ReadLine());
+                Console.Write("Nhap Ten: ");
+                student.Name = Console.ReadLine();
+                Console.Write("Nhap Tuoi: ");
+                student.Age = int.Parse(Console.ReadLine());
+                return student;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Loi nhap du lieu: " + ex.Message);
+                return Nhap1HS(); // Goi lai de nhap lai
+            }
+            
         }
         public static void In1HS(Student student)
         {
